@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 .card{
   border-radius: 25px 0 25px 0;
@@ -10,9 +11,23 @@
   width: 400px;
   height: 300px;
   text-align: center;
+  cursor: pointer;
+  transition: transform .3s ease-in ;
+  overflow: hidden;
+}
+.card:hover .rating {
+  transform: scale(1.1);
+  background-color: #A569BD  ;  
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.rating:hover{
+  background-color: #A569BD  ;
   
 }
 .rating{
+  transition: bacckground-color .3s ease-in;
   width: 60px;
   height: 60px;
   border: 1px solid #e2e2e2;
@@ -30,10 +45,19 @@
   flex-wrap: wrap;
   align-items: center;
   height: 400px;
+  padding: 40px;
 }
 .text{
   margin: 30px;
   font-size: 18px;
   text-transform: capitalize;
   color: #ccc;
+}
+
+.close{
+  position: relative;
+  top: -15%;
+  left: 180px;
+  background-color: transparent;
+  border: none;
 }

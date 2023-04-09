@@ -1,11 +1,11 @@
 
 import FeedBackItem from "./FeedBackItem"
-const FeedBackList = ({real} ) => {
+const FeedBackList = ({real , handleDelete} ) => {
     
   
   return <>
   <div className="feedbackList">
-    {real.map((reel )=>(<FeedBackItem reel={reel}/>))}
+    {real.map((reel )=>(<FeedBackItem key={reel.id}  reel={reel}  handleDelete={handleDelete}/>))}
   </div>
 
     </>

@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Card() {
+const Card = ({children ,reverse}) => {
   return (
-    <div>Card</div>
+    <div className='card'  >{children }
+    
+    </div>
   )
 }
 
