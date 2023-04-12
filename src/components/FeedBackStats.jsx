@@ -5,7 +5,7 @@ const FeedBackStats = ({real}) => {
 
 let avg = real.reduce((acc,cur)=>{
     return acc + cur.rating
-},0)/real.length;
+},0);
  
 avg.toFixed(1)
 
@@ -15,6 +15,7 @@ avg.toFixed(1)
         <span>rating : {isNaN(avg)?0:avg}</span>
     </div>
   )
-}
+};
+
 
 export default FeedBackStats

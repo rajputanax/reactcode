@@ -3,7 +3,7 @@ import { useState } from 'react';
 import FeedBackList from './components/FeedBackList';
 import FeedBackStats from './components/FeedBackStats';
 import RealData from './components/data/RealData';
-
+import FeedBackForm from './components/FeedBackForm';
 function App() {
 // usestate hook for dynamic data 
 
@@ -27,7 +27,9 @@ if(window.confirm('are you sure ')){
 
           {/* feedbacklist which is going to loop through map method */}
           <div className="container">
+           
             <FeedBackStats real={real}/>
+            <FeedBackForm/>
             <FeedBackList real={real} handleDelete={deleteFeedback}/>
           </div>
          {/* ================================================================================== */}
